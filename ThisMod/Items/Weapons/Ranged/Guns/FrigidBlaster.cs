@@ -19,7 +19,7 @@ namespace ThisMod.Items.Weapons.Ranged.Guns
 			item.ranged = true;
 			item.width = 40;
 			item.height = 20;
-			item.useTime = 20;
+			item.useTime = 2000;
 			item.useAnimation = 20;
 			item.useStyle = ItemUseStyleID.HoldingOut;
 			item.noMelee = true; //so the item's animation doesn't do damage
@@ -85,7 +85,7 @@ namespace ThisMod.Items.Weapons.Ranged.Guns
 		// Even Arc style: Multiple Projectile, Even Spread 
 		public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
-			float numberProjectiles = 3 + Main.rand.Next(3); // 3, 4, or 5 shots
+			float numberProjectiles = 1 + Main.rand.Next(1000); // 3, 4, or 5 shots
 			float rotation = MathHelper.ToRadians(45);
 			position += Vector2.Normalize(new Vector2(speedX, speedY)) * 45f;
 			for (int i = 0; i < numberProjectiles; i++)

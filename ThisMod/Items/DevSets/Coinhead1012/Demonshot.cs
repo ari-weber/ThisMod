@@ -23,13 +23,13 @@ namespace ThisMod.Items.DevSets.Coinhead1012 //We need this to basically indicat
 
             
 
-            projectile.width = 3; //Set the hitbox width
+            projectile.width = 6; //Set the hitbox width
 
-            projectile.height = 3; //Set the hitbox height
+            projectile.height = 6; //Set the hitbox height
 
             projectile.timeLeft = 2000; //The amount of time the projectile is alive for
 
-            projectile.penetrate = 2; //Tells the game how many enemies it can hit before being destroyed
+            projectile.penetrate = 20; //Tells the game how many enemies it can hit before being destroyed
 
             projectile.friendly = true; //Tells the game whether it is friendly to players/friendly npcs or not
 

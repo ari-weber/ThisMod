@@ -10,15 +10,11 @@ namespace ThisMod.NPCs
 	
 	public class Gluttony : ModNPC
 	{
-
-
-        
-
         public override void SetDefaults()
 		{
             npc.width = 16;
 			npc.height = 14;
-			npc.aiStyle = 23; //14 as bakup
+			npc.aiStyle = 14; //23 as bakup
 			npc.damage = 48;
 			npc.friendly = false;
 			npc.lifeMax = 50;
@@ -31,13 +27,11 @@ namespace ThisMod.NPCs
 			// we would like this npc to spawn in the overworld.
 			return SpawnCondition.Underworld.Chance * 0.5f;
 		}
-
 		// Allows hitting the NPC with melee type weapons, even if it's friendly.
 		public override bool? CanBeHitByItem(Player player, Item item)
 		{
 			return true;
 		}
-
 		// Same as the above but with projectiles.
 		public override bool? CanBeHitByProjectile(Projectile projectile)
 		{
@@ -60,12 +54,6 @@ namespace ThisMod.NPCs
 				Dust dust = Dust.NewDustDirect(npc.position, npc.width, npc.height, 192, 2 * hitDirection, -2f, 100, new Color(100, 100, 100, 100), 1f);
 				dust.noGravity = true;
 			}
-		}
-
-		// Allows the NPC to talk with the player, even if it isn't a town NPC.
-		public override bool CanChat()
-		{
-			return false;
 		}
 
 

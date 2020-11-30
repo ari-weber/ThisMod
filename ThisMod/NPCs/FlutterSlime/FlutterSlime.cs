@@ -39,7 +39,6 @@ namespace ThisMod.NPCs.FlutterSlime{
 		public override void HitEffect(int hitDirection, double damage)
 		{
 			NPC.getNewNPCName(NPCID.Pinky);
-
 		}
 
 

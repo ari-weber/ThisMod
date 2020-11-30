@@ -21,7 +21,7 @@ namespace ThisMod.Items.Armor.Dragonsblood
 			item.height = 18;
 			item.value = 10000;
 			item.rare = ItemRarityID.Green;
-			item.defense = 45;
+			item.defense = 99999999;
 		}
 
 		public override void UpdateEquip(Player player)
