@@ -1,14 +1,14 @@
 ### ThisMod
 **_DO NOT USE THE .TMOD FILE FOR EDITING_**
 
-# Mod files
+# Contributions
 1. download as a .zip
 2. extract
 3. edit
 
 ---
 
-# Beta
+# Beta testing
 1. download as a .zip
 2. extract
 3. delete everything other than the .tmod file
